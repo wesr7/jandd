@@ -38,6 +38,7 @@ gem 'bower-rails'
 # gem 'capistrano-rails', group: :development
 gem "foreman"
 group :production, :staging do
+  gem "thin"
   gem "rails_12factor"
   gem "rails_stdout_logging"
   gem "rails_serve_static_assets"
