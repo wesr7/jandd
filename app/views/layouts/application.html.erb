@@ -5,12 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div class="main-image">
+<nav class="navbar transparent navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/when&where">WHEN & WHERE</a></li>
+        <li><a href="/accomodations">ACCOMODATIONS</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li><a class="hashtag" href="/">#THEJUANFORDANIELLE</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+        <li><a href="/registry">REGISTRY</a></li>
+        <li><a href="#">HONEY FUND</a></li>
+      </ul>
+    </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="main-image container main">
+    <!-- <div class="row">
+      <div class="col-xs-12">
+      </div>
+    </div> -->
 
-</div>
+
 <%= yield %>
 
+</div>
 </body>
 </html>
