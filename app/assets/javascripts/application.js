@@ -15,11 +15,3 @@
 //= require angular/angular
 //= require bootstrap-sprockets
 //= require_tree .
-$(document).ready(function(){
-
-
-$('#when-where').click(function(){
-    $('.when').append("<p>" + June 18th 2016 + "</p>");
-});
-
-});

@@ -1,1 +1,1 @@
-main = angular.module('main', [])
+
