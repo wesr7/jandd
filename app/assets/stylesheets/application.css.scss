@@ -31,6 +31,14 @@
     font-style: normal;
 
 }
+img {
+  height: 320px;
+  width: 320px;
+  margin-top: 10px;
+}
+.instagram {
+  background-color: rgb(56, 81, 137);
+}
 body {
     font-size: 20px;
     font-family: 'Julius Sans One', sans-serif;
@@ -38,12 +46,17 @@ body {
 .main {
   padding-right: 0px;
   padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+
 }
 .main-image {
-    position: absolute;
-    min-height: 750px;
-    width: 100%;
+    position: relative;
+    height: 800px;
+    max-width: 100%;
     background: url('./dandjmain2.jpg') repeat scroll 50% 40% / cover rgba(0,0,0,0);
+    border: 0px;
+
 }
 /*-- Nav Bar --*/
  .navbar {
@@ -59,9 +72,11 @@ body {
     float: none;
   }
 ul.navbar-nav li a:hover, ul.navbar-nav li a:active {
-    color: black !important;
+    color: rgb(244, 215, 198) !important;
 }
-
+.navbar-nav > li > a {
+  color: rgb(56, 81, 137) !important;
+}
 ul.navbar-nav li.active a {
     color: white !important;
 }
@@ -86,7 +101,7 @@ ul.navbar-nav li a.hashtag {
   height: auto;
   font-size: 62.5%;
   text-align: center;
-  margin-top: 265px;
+  margin-top: -525px;
   /*--text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);--*/
   background-color: white;
   opacity: 0.6;
