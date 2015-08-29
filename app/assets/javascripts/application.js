@@ -21,7 +21,7 @@
 
 $(document).ready(function(){
     $("#link_1").on("click", function(){
-        $("<div class='containter content'><div class='row'><div class='col-xs-12'><h1><i>When & Where</i></h1></div><div class='col-xs-12 col-sm-4'><h2>Date</h2><h3>June 18th 2016</h3></div><div class='col-xs-12 col-sm-4'><h2>Time</h2><h3>6pm</h3></div><div class='col-xs-12 col-sm-4'><h2>Venue</h2><h3>Brookside Gold Club<br>1133 Rosemont Ave<br>Pasadena, Ca 91103</h3></div> <h4><strong>Reception to Follow</strong></h4></div></div>").insertAfter(".main");
+        $(".content").append("<div class='row'><div class='col-xs-12'><h1><i>When & Where</i></h1></div><div class='col-xs-12 col-sm-4'><h2>Date</h2><h3>June 18th 2016</h3></div><div class='col-xs-12 col-sm-4'><h2>Time</h2><h3>6pm</h3></div><div class='col-xs-12 col-sm-4'><h2>Venue</h2><h3>Brookside Golf Club<br>1133 Rosemont Ave<br>Pasadena, Ca 91103</h3></div> <h4><strong>Reception to Follow</strong></h4></div>");
     });
     $("#link_2").on("click", function(){
         console.log('clicked');
