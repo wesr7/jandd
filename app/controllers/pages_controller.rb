@@ -1,13 +1,10 @@
 class PagesController < ApplicationController
     def main
-        @endpoint="https://api.instagram.com/v1/tags/thejuanfordanielle/media/recent?access_token=10081932.64d472e.266dfc56a7c842ce9f18e45b4feee8b1"
-
-        @response = HTTParty.get(@endpoint)
-
+        @response = Instagram.tag_search('thejuanfordanielle')
+        @tags = @response[0].name
         @images = []
-
-        @response['data'].each do |element|
-            @images << element['images']['low_resolution']['url']
+        for media_item in Instagram.tag_recent_media(@tags)
+            @images << media_item['images']['low_resolution']['url']
         end
         @images
     end

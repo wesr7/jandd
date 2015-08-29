@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
+gem 'instagram'
 gem 'figaro'
 gem 'bootstrap-sass' # Twitter Bootstrap CSS Framework
 gem 'font-awesome-rails' # Font Awesome Library Gem
@@ -47,7 +48,6 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'pry-rails'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   gem 'pry-rails' # so much better than the default IRB console

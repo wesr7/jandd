@@ -8,18 +8,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<nav class="navbar transparent navbar-inverse navbar-fixed-top">
+  <div class="main-image">
+<nav class="navbar transparent navbar-inverse">
   <div class="container-fluid">
      <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="/when&where">WHEN & WHERE</a></li>
-        <li><a href="/accomodations">ACCOMODATIONS</a></li>
+        <li><a id="link_1" href="#">WHEN & WHERE</a></li>
+        <li><a id="link_2" href="#">ACCOMODATIONS</a></li>
       </ul>
       <ul class="nav navbar-nav">
         <li><a class="hashtag" href="/">#THEJUANFORDANIELLE</a></li>
       </ul>
       <ul class="nav navbar-nav">
-        <li><a href="/registry">REGISTRY</a></li>
+        <li><a id="link_3" href="#">REGISTRY</a></li>
         <li><a href="#">HONEY FUND</a></li>
       </ul>
     </div>
@@ -32,13 +33,14 @@
     </div>
   </div>
 </nav>
-<div class="container-fluid main main-image">
+<div class="container-fluid main">
     <div class="row">
       <div class="">
       </div>
     </div>
-</div>
+  </div>
 
+</div>
 <%= yield %>
 
 
