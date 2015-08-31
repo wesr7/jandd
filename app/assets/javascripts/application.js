@@ -50,6 +50,14 @@ $(document).ready(function(){
             $(content).show();
         }
     });
+    $("#home").on("click", function(){
+        if($(content).html()) {
+        $(content).empty();
+        $(content).hide();
+    } else {
+        return false;
+    }
+    });
 });
 
 
