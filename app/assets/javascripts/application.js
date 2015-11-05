@@ -52,7 +52,7 @@ $(document).ready(function(){
         } else {
             $(content).append("<div class='row'><div class='col-xs-12'><h1><i>Registry</i></h1></div></div><div class='row'><div class='col-xs-12 col-sm-4'><h3><a href='https://www-secure.target.com/gift-registry/giftgiver?registryId=qW0u4L0LTDndC6yMp4tVKA&registryType=WEDDING' target='_blank'>Target</a></h3></div><div class='col-xs-12 col-sm-4'><h3><a href='http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542314711&pwsurl=' target='_blank'>Bed, Bath and Beyond</a></h3></div><div class='col-xs-12 col-sm-4'><h3><a href='http://www1.macys.com/registry/wedding/guest/?registryId=6403276' target='_blank'>Macy's</a></h3></div></div>");
             $(content).animate({
-            width: 'toggle'
+            width: 'toggle',
         });
         }
     });
@@ -64,6 +64,15 @@ $(document).ready(function(){
         return false;
     }
     });
+
+    function hideMobileNav() {
+        $('.navbar-nav>li>a').on("click", function(){
+            $('.navbar-collapse').removeClass('in');
+        });
+    }
+
+    hideMobileNav();
+
 });
 
 
